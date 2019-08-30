@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>Installing Bookify</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="branding">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                        <span class="text-highlight">Bookify</span><span class="text-bold">Docs</span>
+                    </a>
+                </h1>
+            </div><!--//branding-->
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Installation</li>
+            </ol>
+        </div><!--//container-->
+    </header><!--//header-->
+    <div class="doc-wrapper">
+        <div class="container">
+            <div id="doc-header" class="doc-header text-center">
+                <h1 class="doc-title"><i class="icon icon icon_puzzle_alt"></i> Installation</h1>
+                <div class="meta"><i class="fa fa-clock-o"></i> Last updated: June 18th, 2018</div>
+            </div><!--//doc-header-->
+            <div class="doc-body">
+
+                <div class="doc-content">
+                    <div class="content-inner">
+                        <section id="download" class="doc-section">
+                            <h1>Bookify Installation</h1>
+                            <p>Installation of <strong>Bookify</strong> is extremely easy and is specially designed keeping
+                            non technical users in mind. Please follow below sections step by step in order to
+                            successfully install <strong>Bookify</strong>. If you are stuck at any step and need assistance
+                            of any kind, please do not hesitate to contact our support team. We will love to
+                            hear from you and solve your issues if there are any. Alright, let's start installation.</p>
+                            <br>
+                            <h4>Download Bookify From CodeCanyon</h4>
+                            <p>First of all, you will need to download <strong>Bookify</strong> from your CodeCanyon account. After purchasing
+                            Bookify, go to <strong>Downloads</strong> section of your Envato account.</p>
+                            <br>
+                            <img src="assets/images/demo/downloads-open.PNG" class="img-responsive">
+                            <br>
+                            <p>Click on <strong>Download</strong> as shown in red box highlighted by an arrow. You will see a downloads page
+                            containing all of your purchased items on <strong>Envato Studio</strong>. From that list, find
+                            <strong>Bookify and download it.</strong></p>
+                            <br>
+                            <img src="assets/images/demo/download-bookify.png" class="img-responsive">
+                            <br>
+                            <p>Click on <strong>Download</strong> button and select <strong>All files & Documentation</strong> as shown in above image highlighted
+                                by red box and arrow.</p>
+                        </section>
+                        <section id="structure" class="doc-section">
+                            <h4>Understanding File Structure</h4>
+                            <p>Once you have downloaded, you will get a zip file in your computer. Extract the zip file
+                            and you will get one zip file containing <strong>Bookify</strong> and one folder containing all documentation as shown in image below.
+                            To install <strong>Bookify</strong>, we need to upload zip file named <strong>bookify</strong> to our hosting or server.</p>
+                            <br>
+                            <img src="assets/images/demo/file-structure.png" class="img-responsive">
+                            <br>
+                        </section>
+                        <section id="upload_bookify" class="doc-section">
+                            <h4>Upload Bookify</h4>
+                            <p>Let's upload <strong>Bookify</strong> to our hosting or server. You can use <strong>File Manager</strong>
+                            from your hosting panel or <strong>FTP client</strong> like <strong>FileZilla</strong> or <strong>WinSCP</strong> to upload the zip file.</p>
+                            <br>
+                            <div class="alert alert-warning">Please remember to upload files into a directory which is accessible by your
+                                website URL. It is <code>public_html</code> or <code>www</code> in most cases.</div>
+                            <br>
+                            <p>After uploading the zip file. Right click on file and select <strong>Extract</strong> to extract the contents
+                            of zip file.</p>
+                        </section>
+                        <section id="create_database" class="doc-section">
+                            <h4>Creating Database</h4>
+                            <p>Database is used to store all of <strong>Bookify</strong> data such as accounts of clients
+                            and administrators, your booking categories, packages, addons and bookings itself. It is important to
+                            create an empty database before starting with <strong>Bookify</strong> installation. So let's create an empty database first.</p>
+                            <br>
+                            <div class="alert alert-info"><strong>Bookify</strong> is fully compatible with other SQL databases such
+                            as PostgresSQL, SQlite and SQL Server. If you want to use them instead of MySQL, than make sure you create a database
+                            accordingly. We are creating a MySQL database in our demo as it's most common.</div>
+                            <br>
+                            <img src="assets/images/demo/open-wizard.png" class="img-responsive">
+                            <br>
+                            <p>After logging into your hosting account, click on <strong>MySQL Database Wizard</strong> as shown in above images
+                            highlighted by red box and arrow. A MySQL database creation wizard will open up.</p>
+                            <br>
+                            <img src="assets/images/demo/provide-db-name.png" class="img-responsive">
+                            <br>
+                            <p>In first step provide the name of you database and click on <strong>Next</strong> button.</p>
+                            <br>
+                            <img src="assets/images/demo/set-db-user-and-pass.png" class="img-responsive">
+                            <p>In second step, provide name for database user and also create a password for database. Once you are done, click on
+                            <strong>Next</strong> button to proceed to next step.</p>
+                            <br>
+                            <img src="assets/images/demo/set-previliges.png" class="img-responsive">
+                            <br>
+                            <p>In third step, Make sure to click on <strong>All Privileges</strong> and click on Next button to
+                            proceed to final step. Once you click on Next button, your database will be created and you will get a confirmation message on screen.
+                                Please do not forget to note <strong>database name</strong>, <strong>database username</strong> and <strong>database password</strong> to use it during installation.</p>
+                            <br>
+                        </section>
+                        <section id="running_installation_wizard" class="doc-section">
+                            <h4>Running Installation Wizard</h4>
+                            <p>Once you have successfully uploaded and extracted files, created an empty database, you are ready to run
+                            installation wizard. Navigate to <strong>URL</strong> where you have extracted the files on your web hosting.</p>
+                            <p>Let's assume you have uploaded and extracted files in a folder named <strong>bookify</strong>. Open <br><br><code>http://www.your-domain.com/bookify/install</code><br><br>
+                             in your browser. If you have done everything correctly, installation wizard will open up. If not, make sure <code>.htaccess</code> file is present in your folder and you have minimum PHP version required
+                            to run <strong>Bookify.</strong> Also make sure that apache user have appropriate permissions to write in <code>application/storage</code> folder. Please refer to support with full details of your issue if you need any help.</p>
+                            <p>Let's go through installation wizard step by step to successfully install <strong>Bookify.</strong>
+                            At the first screen, you will see a welcome message. Click on <strong>Start</strong> button to begin.</p>
+                            <br>
+                            <div class="alert alert-info">Use <strong>https://</strong> to open <strong>URL</strong> instead of <strong>http://</strong> if SSL Certificate is installed
+                                on your domain.</div>
+                        </section>
+                        <section id="requirements" class="doc-section">
+                            <h4>Hosting Requirements</h4>
+                            <p>Once you click on <strong>Start</strong> button, a page will open containing a checklist for
+                            all requirements. If all the requirements are fulfilled, you will see a blue button named <strong>Check Permissions</strong>
+                            as highlighted in below image with red box and arrow. If PHP version is lower, please make sure you enable
+                            required PHP version from your hosting panel. If an extension is not enabled, please make sure you enable it from your hosting panel.
+                            For more information and help regarding PHP version and extensions, send image of checklist to your hosting support
+                            to get help from them.</p>
+                            <br>
+                            <img src="assets/images/demo/step-check-reqs.png" class="img-responsive">
+                            <br>
+                            <p>If all the requirements are fulfilled, click on <strong>Check Permissions</strong> button to proceed to next step.</p>
+                        </section>
+                        <section id="permissions" class="doc-section">
+                            <h1>Folder Permissions</h1>
+                            <p>By default <strong>Bookify</strong> require <strong>775</strong> permissions also known as permissions to read and write in <code>application/storage/logs</code> and <code>application/storage/framework</code> and <code>application/bootstrap/cache</code> folders.</p>
+                            <br>
+                            <div class="alert alert-success">If you haven't understand it, don't worry. We have set correct permissions out of box. If for some reasons, you permissions
+                            are not valid for any of three folders, you can correct them yourself or you can refer to our support.</div>
+                            <br>
+                            <img src="assets/images/demo/step-check-perms.png" class="img-responsive">
+                            <br>
+                            <p>Click on blue <strong>Verify Purchase</strong> button to proceed to next step.</p>
+                            <br>
+                        </section>
+                        <section id="validate_purchase" class="doc-section">
+                            <h4>Verify Your Purchase</h4>
+                            <p>In this step, you will have to provide your license key to validate you
+                                have purchased <strong>Bookify</strong>. Go to downloads page and find <strong>Bookify</strong>.
+                                This time click on License Certificate to download it to your computer. <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-" target="_blank">Go Here</a>
+                            to find more information on how to download license file.</p>
+                            <br>
+                            <p>After downloading license file, open it and copy your purchase code. Your purchase code will look
+                            like green highlighted box in below image.</p>
+                            <br>
+                            <img src="assets/images/demo/purchase-code.png" class="img-responsive">
+                            <br>
+                            <p>Copy your purchase code and paste it in the form on installation wizard and click on <strong>Click To Verify</strong> button as shown in image below.</p>
+                            <br>
+                            <img src="assets/images/demo/step-verify-purchase.png" class="img-responsive">
+                            <br>
+                            <p>If your purchase code is valid, you will be taken to next step to configure app, otherwise you will see an error.</p>
+                            <br>
+                            <div class="alert alert-warning">Please remember that single license is only valid for one installation
+                            as per Envato Studio rules. Using single license key on multiple installations is a copyright violation.</div>
+                            <br>
+                            <p>Once you verify your purchase, App configuration page will open up.</p>
+                        </section>
+                        <section id="app" class="doc-section">
+                            <h4>Application Configuration</h4>
+                            <p>First part of configuration form is <strong>app configuration</strong>.</p>
+                            <br>
+                            <img src="assets/images/demo/app_configuration.png" class="img-responsive">
+                            <br>
+                            <p>Please provide a suitable name for your app, probably your business name will be here. Also provide <strong>complete URL</strong> to your
+                            app and select your <strong>timezone</strong> from dropdown. It's important to select a valid <strong>timezone</strong>.</p>
+                        </section>
+                        <section id="db" class="doc-section">
+                            <h4>Database Configuration</h4>
+                            <p>Second part of configuration form is <strong>database configuration</strong>. As we have already created our database, we just
+                            have to enter its details here.</p>
+                            <br>
+                            <img src="assets/images/demo/db_configuration.png" class="img-responsive">
+                            <br>
+                            <p>From first dropdown, select the type of your database. In most cases it will be <strong>MySQL</strong> and we are also
+                            using it. However if you have created another type of database, please select it from dropdown. Available options are <strong>Postgres SQL</strong>,
+                            <strong>SQL Server</strong> and <strong>SQLite</strong>.</p>
+                            <p>Next part is database hostname and database port. Hostname is <strong>127.0.0.1</strong> and port is
+                            <strong>3306</strong> with most hosting providers and you can leave them to default. However if you are using
+                            a different connection and you are not sure, please consult your hosting provider for assistance.</p>
+                            <p>In the final part, enter <strong>database name</strong>, <strong>database username</strong> and <strong>database password</strong>
+                            for database that we have created earlier.</p>
+                        </section>
+                        <section id="mailer" class="doc-section">
+                            <h4>Mailer Configuration</h4>
+                            <p>Last part of configuration form is <strong>mailer configuration</strong>. Here you will have to input your <strong>SMTP</strong>
+                            details so that <strong>Bookify</strong> can send emails to your customers. For example emails are sent when a booking is made
+                            or cancelled.</p>
+                            <br>
+                            <img src="assets/images/demo/mailer-configuration.png" class="img-responsive">
+                            <br>
+                            <p>Leave <strong>Mail Driver</strong> default to SMTP. In the next field, input your
+                            <strong>Mail Host</strong> which will be <code>mail.your-domain.com</code> in most cases. Enter your <strong>Mail Port</strong>
+                            and <strong>Mail username & password</strong>. You can also leave <strong>Mail encryption</strong> default to
+                            <strong>SSL</strong> or you can use <strong>TLS</strong> depending on your hosting environment. If you have any issue
+                            getting around this part, please consult your hosting provider for details or you can consult our support alternatively.</p>
+                            <br>
+                            <div class="alert alert-info"><strong><i class="fa fa-info-circle fa-lg"></i></strong> &nbsp; You can go to <strong>Email Accounts</strong> section from your hosting
+                            panel to create email accounts and to use them here.</div>
+                            <br>
+                            <p>Once you have entered all details, click on <strong>Install Application</strong> button. If you see any error related to database
+                            connection, please make sure you have entered correct details for database connection and than try again.</p>
+                        </section>
+                        <section id="general" class="doc-section">
+                            <h4>General App Settings</h4>
+                            <p>This section comprise of few general settings to setup the app.</p>
+                            <br>
+                            <img src="assets/images/demo/app_settings.png" class="img-responsive">
+                            <br>
+                            <p>Please enter your <strong>Business Name</strong> which can be same as <strong>app name</strong> entered in
+                            previous step or it can be different. Select <strong>default currency</strong> in which you will charge your customers
+                            for bookings. All your prices and payments will be in this currency. Select <strong>default language</strong> for your app. Available options
+                            are <strong>English, Spanish and French.</strong> Enter business email and phone number. This email and phone number will be shown to customers
+                            once they complete a booking so that they can contact in case of any issue.</p>
+                            <br>
+                            <div class="alert alert-info"><strong><i class="fa fa-info-circle fa-lg"></i></strong> &nbsp; After successful setup, you can change these settings by going to
+                            settings page of administrator panel.</div>
+                            <div class="alert alert-danger"><strong><i class="fa fa-times-circle fa-lg"></i></strong> &nbsp; In case you switch currency later while app is working and there
+                            are active bookings and packages. By default Bookify will not take care of conversions. So please avoid to change currency later on specially
+                            If there are bookings.</div>
+                        </section>
+                        <section id="user" class="doc-section">
+                            <h4>Creating Administrator Account</h4>
+                            <p>In the second section of form, please enter details to create an administrator account to login for first time.
+                            After login, you can go to <strong>Users</strong> section of administrator panel to add more user account.</p>
+                            <br>
+                            <img src="assets/images/demo/admin_account.png" class="img-responsive">
+                            <br>
+                            <p>Once you have entered all details, click on <strong>Finalize & Login</strong> to finish setup.
+                            If you see any error or missing input, please correct and try again.</p>
+                        </section>
+                        <section id="finishing">
+                            <h4>Installation Completed</h4>
+                            <p>In case of success, you will see a screen telling that installation is completed and you can
+                            login now. Please continue to <a href="settings.html"><strong>Settings</strong></a> and <a href="quickstart.html"><strong>Quick start guide</strong></a> for
+                            further help.</p>
+                        </section>
+                    </div>
+                </div><!--//doc-content-->
+
+                <div class="doc-sidebar hidden-xs">
+                    <nav id="doc-nav">
+                        <ul id="doc-menu" class="nav doc-menu" data-spy="affix">
+                            <li>
+                                <a class="scrollto" href="#download">Download Bookify</a>
+                                <ul class="nav doc-sub-menu">
+                                    <li><a class="scrollto" href="#structure">Understanding file structure</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="scrollto" href="#upload_bookify">Upload Bookify</a>
+                            </li>
+                            <li><a class="scrollto" href="#create_database">Create Database</a></li>
+                            <li>
+                                <a class="scrollto" href="#running_installation_wizard">Running Installation Wizard</a>
+                                <ul class="nav doc-sub-menu">
+                                    <li><a class="scrollto" href="#requirements">Check Requirements</a></li>
+                                    <li><a class="scrollto" href="#permissions">Folder Permissions</a></li>
+                                    <li><a class="scrollto" href="#validate_purchase">Validate Purchase</a></li>
+                                    <li><a class="scrollto" href="#app">App Configuration</a></li>
+                                    <li><a class="scrollto" href="#db">Database Configuration</a></li>
+                                    <li><a class="scrollto" href="#mailer">Mailer Configuration</a></li>
+                                    <li><a class="scrollto" href="#general">General Settings</a></li>
+                                    <li><a class="scrollto" href="#user">Creating Administrator User</a></li>
+                                    <li><a class="scrollto" href="#finishing">Finishing Installation</a></li>
+                                </ul>
+                            </li>
+                        </ul><!--//doc-menu-->
+                    </nav>
+                </div><!--//doc-sidebar-->
+            </div><!--//doc-body-->
+        </div><!--//container-->
+    </div><!--//doc-wrapper-->
+
+
+
+</div><!--//page-wrapper-->
+
+<footer class="footer text-center">
+    <div class="container">
+        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+        <small class="copyright">Created with <i class="fa fa-heart"></i> by <a href="https://www.xtreme-webs.com" target="_blank">Xtreme Webs</a></small>
+
+    </div><!--//container-->
+</footer><!--//footer-->
+
+
+<!-- Main Javascript -->
+<script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html> 
+
